@@ -33,7 +33,7 @@ function App() {
           setLoading(false)
       }
       fetchData()
-  }, [])
+  }, [today])
 
 
   if (loading) {
