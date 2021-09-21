@@ -1,4 +1,3 @@
-import DatePicker from './components/DatePicker';
 import PostsList from './components/PostsList'
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -51,7 +50,6 @@ function App() {
         <h1 className="header-title">Spacestagram</h1>
         <p className="header-paragraph">Brought to you by NASA's Astronomy Photo of the Day (APOD) API</p>
       </header>
-      <DatePicker setNasaData={setNasaData} />
       <PostsList nasaData={nasaData} />
     </div>
   );
