@@ -124,3 +124,77 @@ table {
 }
 
 /* AFTER RESET */
+
+.liked {
+  background-color: #fca5a5;
+  animation: wiggle 0.5s;
+}
+
+.not-liked {
+  background-color: white;
+}
+
+.post-container {
+  border: 5px solid #111827;
+  background-color: #9ca3af;
+  border-radius: 10px;
+  flex-direction: column;
+  width: 75%;
+  margin: 50px;
+}
+
+.post-img {
+  width: 100%;
+}
+
+.post-title {
+  margin: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.post-explanation {
+  width: 75%;
+  font-size: 1.1em;
+  line-height: 22px;
+}
+
+.post-date {
+  color: lightgray;
+  font-weight: 400;
+}
+
+.post-button {
+  margin: 10px;
+  width: 100px;
+  text-align: center;
+  height: 30px;
+  border-radius: 25px;
+  font-weight: lighter;
+  font-size: 1em;
+  cursor: pointer;
+  border: 0.1px solid black;
+  text-transform: uppercase;
+}
+
+.post-button:hover {
+  background-color: #fee2e2;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
