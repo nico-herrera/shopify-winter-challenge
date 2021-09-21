@@ -5,7 +5,7 @@ import '../styles/PostsList.css'
 const PostsList = ({nasaData}) => {
 
     return (
-        <article>
+        <article styles={{height: '100%'}} className="post-list">
             {nasaData.map((apod) => (
                     <Post apod={apod} key={apod.date} />
             ))}

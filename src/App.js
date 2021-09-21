@@ -30,7 +30,7 @@ function App() {
       
       const fetchData = async () => {
           const res = await axios(`https://api.nasa.gov/planetary/apod?api_key=1Y2SfiZHf815zobfXjpCT9j8cZ61KnndxItFUapp&start_date=${today}&end_date`)
-          setNasaData(res.data)
+          setNasaData(res.data.reverse())
           setLoading(false)
       }
       fetchData()
@@ -46,7 +46,11 @@ function App() {
   }
 
   return (
-    <div className="">
+    <div className="center-col">
+      <header className="header center-col">
+        <h1 className="header-title">Spacestagram</h1>
+        <p className="header-paragraph">Brought to you by NASA's Astronomy Photo of the Day (APOD) API</p>
+      </header>
       <DatePicker setNasaData={setNasaData} />
       <PostsList nasaData={nasaData} />
     </div>

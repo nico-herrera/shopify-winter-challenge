@@ -125,8 +125,35 @@ table {
 
 /* AFTER RESET */
 
+body {
+  background-color: #374151;
+}
+
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.center-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(255, 215, 215);
+}
+
+.header-title {
+  font-size: 2.5em;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.header-paragraph {
+  color: grey;
 }
